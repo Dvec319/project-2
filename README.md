@@ -5,7 +5,7 @@
 - [**LINK TO GITHUB**](https://github.com/Dvec319/project-2)
 - [**LINK TO DEPLOYED WEBSITE**](https://videogame-app.onrender.com/)
 - **List of Technologies used:** HTML, JS, CSS, Node, Express, EJS, Mongo
-- [**LINK TO TRELLO**] (http://www.trello.com)
+- [**LINK TO TRELLO**](https://trello.com/b/5miNkPwX/my-favorite-video-game-list)
 
 
 ## Description
