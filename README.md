@@ -14,8 +14,8 @@ In this project I'm going to create an app that allows users to make a list of t
 
 ## Mock Up of UI
 
-- ![Desktop View](http://imgur.com)
-- ![Mobile View](http://imgur.com)
+- ![Desktop View](https://i.imgur.com/3rhhgff.png)
+- ![Mobile View](https://i.imgur.com/EWDti2r.png)
 
 ## List of Backend Endpoints
 
