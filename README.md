@@ -12,7 +12,7 @@
 
 In this project I'm going to create an app that allows users to make a list of their favorite video games. They will be prompted to put in the name, release year, publisher, an image, and a brief description of the game itself. Said user will be able to edit an already existing video game on their list or delete one from it all together.
 
-## Mock Up of UI
+## Mockup of UI
 
 - ![Desktop View](https://i.imgur.com/ZyJK9Cw.png)
 - ![Mobile View](https://i.imgur.com/CJvbTh7.png)
