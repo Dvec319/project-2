@@ -10,7 +10,7 @@
 
 ## Description
 
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+In this project I'm going to create an app that allows users to make a list of their favorite video games. They will be prompted to put in the name, release year, publisher, an image, and a brief description of the game itself. Said user will be able to edit an already existing video game on their list or delete one from it all together.
 
 ## Mock Up of UI
 
@@ -19,9 +19,16 @@
 
 ## List of Backend Endpoints
 
-|ENDPOINT | METHOD | PURPOSE |
-|---------|--------|---------|
+|  ENDPOINT  | METHOD |           PURPOSE            |
+| ---------- | ------ | ---------------------------- |
+| /gamelist  | GET    | Display list of games        |
+| /new       | GET    | Create a new game            |
+| /:id       | DELETE | Delete an existing game      |
+| /:id       | PUT    | Update an existing game      |
+| /gamelist  | POST   | Put the new game on the list |
+| /:id/:edit | GET    | Edit an existing game        |
+| /:id       | GET    | Display one game             |
 
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 
-![PICTURE OF ERD](http://imgur.com)
+![PICTURE OF ERD](https://imgur.com/a/AnVEdzI)
