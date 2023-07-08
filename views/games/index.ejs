@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../partials/files.ejs') %>
+    <title>My Videogame List</title>
+</head>
+<body>
+    <div class="container">
+        <% for (game of games) { %>
+            <div class="card">
+                <img src="<%= game.image %>">
+                <a href="/game/<%= game._id %>">
+                    <h2><%= game.name %></h2>
+                </a>
+            </div>
+        <% } %>
+    </div>  
+</body>
+</html>
