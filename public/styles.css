@@ -103,3 +103,28 @@ h1.show {
 h2.show {
     margin: 10px;
 }
+
+/* New */
+
+div.new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.new {
+    font-size: 50px;
+}
+
+form.new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+input {
+    margin: 10px;
+}

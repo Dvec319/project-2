@@ -29,12 +29,17 @@ app.get('/games', async (req, res) => {
     res.render('games/index.ejs', {games: allGames})
 });
 
+// New
+app.get('/games/new', (req, res) => {
+    res.render('games/new.ejs')
+});
+
 // Show
 app.get('/games/:id', async (req, res) => {
     const chosenGame = await Game.findById(req.params.id);
 
     res.render('games/show.ejs', {game: chosenGame})
-})
+});
 
 ///////////////////////////
 // Server Listener
@@ -42,4 +47,4 @@ app.get('/games/:id', async (req, res) => {
 const PORT = process.env.PORT || 3500;
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
-})
+});
