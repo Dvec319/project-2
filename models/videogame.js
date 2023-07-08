@@ -5,7 +5,8 @@ const gameSchema = new mongoose.Schema({
     publisher: String,
     yearReleased: Number,
     image: String,
-    briefDescription: String
+    briefDescription: String,
+    username: String
 });
 
 const Game = mongoose.model('game', gameSchema);

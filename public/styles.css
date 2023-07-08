@@ -153,3 +153,80 @@ form.edit {
 input {
     margin: 10px;
 }
+
+/* Landing Page */
+
+body.landing {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button.landing {
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* Signup */
+
+body.signup {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.signup > h1 {
+    font-size: 50px;
+}
+
+input.signup {
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* Login */
+
+body.login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.login>h1 {
+    font-size: 50px;
+}
+
+input.login {
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 5px;
+}

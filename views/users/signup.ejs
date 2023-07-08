@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../partials/files.ejs') %>
+    <title>My Video Game List</title>
+</head>
+<body class="signup">
+    <div class="signup">
+        <h1>Signup Below!</h1>
+        <form action="/user/signup" method="post">
+            <h2>Username: <input type="text" name="username" required></h2>
+            <h2>Password: <input type="password" name="password" required></h2>
+            <input class="signup" type="submit" value="Create Account">
+        </form>
+    </div>
+    
+</body>
+</html>

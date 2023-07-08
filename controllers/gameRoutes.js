@@ -6,6 +6,14 @@ const Game = require('../models/videogame');
 
 const router = express.Router();
 
+router.use((req, res, next) => {
+    if(req.session.loggedIn) {
+        next();
+    } else {
+        res.redirect('/user/login')
+    }
+});
+
 ///////////////////////
 // Declare Routes and Routers
 ///////////////////////
@@ -13,9 +21,9 @@ const router = express.Router();
 
 // Index
 router.get('/', async (req, res) => {
-    const allGames = await Game.find({})
+    const allGames = await Game.find({username: req.session.username})
 
-    res.render('games/index.ejs', {games: allGames})
+    res.render('games/index.ejs', {games: allGames, user: req.session.username})
 });
 
 // New
@@ -37,6 +45,7 @@ router.put('/:id', async (req, res) => {
 
 // Create
 router.post('/', async (req, res) => {
+    req.body.username = req.session.username;
     await Game.create(req.body);
     res.redirect('/games');
 })
