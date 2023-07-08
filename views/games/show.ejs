@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../partials/files.ejs') %>
+    <title><%= game.name %></title>
+</head>
+<body>
+    <header class="show">
+        <h1>My Video Game List</h1>
+        <a href="/games"><h1>Home</h1></a>
+    </header>
+    <div class="show">
+        <h1 class="show"><%= game.name %></h1>
+        <img class="show" src="<%= game.image %>">
+        <h1 class="show">Information</h1>
+        <h2 class="show">Publisher: <%= game.publisher %></h2>
+        <h2 class="show">Year Released: <%= game.yearReleased %></h2>
+        <h2 class="show">Brief Description: <%= game.briefDescription %></h2>
+    </div>
+</body>
+</html>

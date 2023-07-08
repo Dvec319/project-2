@@ -7,11 +7,17 @@
     <title>My Videogame List</title>
 </head>
 <body>
+    <header class="index">
+        <h1>My Video Game List</h1>
+        <a href="/games/new">
+            <h1>Add a new game</h1>
+        </a>
+    </header>
     <div class="container">
         <% for (game of games) { %>
             <div class="card">
                 <img src="<%= game.image %>">
-                <a href="/game/<%= game._id %>">
+                <a href="/games/<%= game._id %>">
                     <h2><%= game.name %></h2>
                 </a>
             </div>

@@ -22,11 +22,19 @@ app.use(express.static('public')); // serve static files from public folder
 ///////////////////////
 // INDUCES - Index, New, Delete, Update, Create, Edit, Show
 
-app.get('/', async (req, res) => {
+// Index
+app.get('/games', async (req, res) => {
     const allGames = await Game.find({})
 
     res.render('games/index.ejs', {games: allGames})
 });
+
+// Show
+app.get('/games/:id', async (req, res) => {
+    const chosenGame = await Game.findById(req.params.id);
+
+    res.render('games/show.ejs', {game: chosenGame})
+})
 
 ///////////////////////////
 // Server Listener
