@@ -41,6 +41,12 @@ app.delete('/games/:id', async (req, res) => {
     res.redirect('/games')
 })
 
+// Update
+app.put('/games/:id', async (req, res) => {
+    await Game.findByIdAndUpdate(req.params.id, req.body);
+    res.redirect('/games');
+})
+
 // Create
 app.post('/games', async (req, res) => {
     await Game.create(req.body);
