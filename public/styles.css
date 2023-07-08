@@ -128,3 +128,28 @@ form.new {
 input {
     margin: 10px;
 }
+
+/* Edit */
+
+div.edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.edit {
+    font-size: 50px;
+}
+
+form.edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+input {
+    margin: 10px;
+}

@@ -42,10 +42,15 @@ app.delete('/games/:id', async (req, res) => {
 })
 
 // Create
-
 app.post('/games', async (req, res) => {
     await Game.create(req.body);
     res.redirect('/games');
+})
+
+// Edit
+app.get('/games/:id/edit', async (req, res) => {
+    const game = await Game.findById(req.params.id);
+    res.render('games/edit.ejs', {game})
 })
 
 // Show

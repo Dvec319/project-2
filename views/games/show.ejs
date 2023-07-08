@@ -21,6 +21,9 @@
         <form method="POST" action="/games/<%=game.id%>?_method=DELETE">
             <input type="submit" value="Delete Game">
         </form>
+        <a href="/games/<%=game._id %>/edit">
+            <button class="show">Edit <%= game.name %></button>
+        </a>
     </div>
     
 </body>
