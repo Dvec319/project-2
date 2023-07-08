@@ -16,6 +16,7 @@ const app = express();
 app.use(morgan('dev')) // middleware for logging
 app.use(methodOverride('_method')); // override with POST having ?_method=DELETE or ?_method=PUT
 app.use(express.static('public')); // serve static files from public folder
+app.use(express.urlencoded({extended: false}))
 
 ///////////////////////
 // Declare Routes and Routers
@@ -34,9 +35,17 @@ app.get('/games/new', (req, res) => {
     res.render('games/new.ejs')
 });
 
+// Create
+
+app.post('/games', async (req, res) => {
+    await Game.create(req.body);
+    res.redirect('/games');
+})
+
 // Show
 app.get('/games/:id', async (req, res) => {
     const chosenGame = await Game.findById(req.params.id);
+    console.log(chosenGame)
 
     res.render('games/show.ejs', {game: chosenGame})
 });
