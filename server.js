@@ -35,6 +35,12 @@ app.get('/games/new', (req, res) => {
     res.render('games/new.ejs')
 });
 
+// Delete
+app.delete('/games/:id', async (req, res) => {
+    await Game.findByIdAndDelete(req.params.id);
+    res.redirect('/games')
+})
+
 // Create
 
 app.post('/games', async (req, res) => {

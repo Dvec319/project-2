@@ -18,6 +18,10 @@
         <h2 class="show">Publisher: <%= game.publisher %></h2>
         <h2 class="show">Year Released: <%= game.yearReleased %></h2>
         <h2 class="show">Brief Description: <%= game.briefDescription %></h2>
+        <form method="POST" action="/games/<%=game.id%>?_method=DELETE">
+            <input type="submit" value="Delete Game">
+        </form>
     </div>
+    
 </body>
 </html>
