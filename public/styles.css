@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
 /* Everything */
 
 * {
@@ -7,7 +10,7 @@
 }
 
 body {
-    background-color: royalblue;
+    background-color: #590925
 }
 
 /* Index */
@@ -159,20 +162,25 @@ input {
 body.landing {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 div.landing{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+}
+
+h1.landing {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: #7d83ff
 }
 
 button.landing {
     font-size: 30px;
+    color: black;
+    background-color: #007fff;
     border-radius: 10px;
     margin: 5px;
 }
