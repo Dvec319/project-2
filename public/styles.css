@@ -202,14 +202,20 @@ div.signup {
     text-align: center;
 }
 
-div.signup > h1 {
+h1.signup {
+    color: #7d83ff;
     font-size: 50px;
+}
+
+h2.signup {
+    color: #7d83ff;
 }
 
 input.signup {
     font-size: 30px;
     border-radius: 10px;
     margin: 5px;
+    background-color: #007fff;
 }
 
 /* Login */
@@ -229,12 +235,18 @@ div.login {
     text-align: center;
 }
 
-div.login>h1 {
+h1.login {
+    color: #7d83ff;
     font-size: 50px;
+}
+
+h2.login {
+    color: #7d83ff;
 }
 
 input.login {
     font-size: 30px;
     border-radius: 10px;
     margin: 5px;
+    background-color: #007fff;
 }
