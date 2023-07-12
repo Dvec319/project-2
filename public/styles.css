@@ -18,6 +18,8 @@ body {
 header.index {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     margin: 20px;
     color: #7d83ff
 }
@@ -30,6 +32,8 @@ header.index>a {
 header.index>a:hover {
     transform: scale(1.05);
     text-decoration: underline;
+    color: salmon;
+    transition: all .5s ease;
 }
 
 .container {
@@ -69,6 +73,12 @@ header.index>a:hover {
     opacity: 1;
 }
 
+@media (max-width: 768px) {
+    h1.index {
+        font-size: 20px;
+    }
+}
+
 /* Show */
 
 header.show {
@@ -86,6 +96,8 @@ header.show > a {
 header.show > a:hover {
     transform: scale(1.05);
     text-decoration: underline;
+    color: salmon;
+    transition: all .5s ease;
 }
 
 div.show {
@@ -122,16 +134,21 @@ h2.show {
 input.show {
     background-color: #007fff;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 button.show {
     background-color: #007fff;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /* New */
+
+body.new {
+    height: 100vh;
+    justify-content: center;
+}
 
 div.new {
     display: flex;
@@ -158,15 +175,52 @@ input {
 
 /* Edit */
 
+header.edit {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: #7d83ff;
+}
+
+header.edit>a {
+    text-decoration: none;
+    color: #7d83ff
+}
+
+header.edit>a:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+    color: salmon;
+    transition: all .5s ease;
+}
+
 div.edit {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    div.edit {
+        text-align: center;
+    }
+
+    form.edit>h2 {
+        font-size: 40px;
+    }
 }
 
 h1.edit {
     font-size: 50px;
+    color: #d4dcff;
+}
+
+@media (max-width: 768px) {
+    h1.edit {
+        font-size: 30px;
+    }
 }
 
 form.edit {
@@ -175,10 +229,24 @@ form.edit {
     justify-content: center;
     align-items: center;
     margin: 30px;
+    color: #d4dcff;
+}
+
+form.edit>h2 {
+    font-size: 30px;
 }
 
 input {
     margin: 10px;
+    height: 30px;
+}
+
+input.edit {
+    font-size: 20px;
+    color: black;
+    background-color: #007fff;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 /* Landing Page */

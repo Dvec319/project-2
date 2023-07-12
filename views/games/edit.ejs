@@ -7,25 +7,20 @@
     <title>Edit <%= game.name %></title>
 </head>
 <body>
-    <header class="show">
+    <header class="edit">
         <h1>My Video Game List</h1>
         <a href="/games"><h1>Home</h1></a>
     </header>
     <div class="edit">
-        <h1 class="edit">Add a new game!</h1>
+        <h1 class="edit">Edit <%= game.name %></h1>
         <form class="edit" action="/games/<%=game._id%>?_method=PUT" method="post">
-            <h2>Name: <input type="text" name="name" value="<%= game.name %>" required></h2>
-            <br>
-            <h2>Publisher: <input type="text" name="publisher" value="<%= game.publisher %>" required></h2>
-            <br>
-            <h2>Year Released: <input type="number" name="yearReleased" value="<%= game.yearReleased %>" required></h2>
-            <br>
-            <h2>Image: <input type="string" name="image" value="<%= game.image %>" required></h2>
-            <br>
+            <h2>Name: <input type="text" name="name" value="<%= game.name %>" size="35" required></h2>
+            <h2>Publisher: <input type="text" name="publisher" value="<%= game.publisher %>" size="35" required></h2>
+            <h2>Year Released: <input type="number" name="yearReleased" value="<%= game.yearReleased %>" size="35" required></h2>
+            <h2>Image: <input type="string" name="image" value="<%= game.image %>" size="35" required></h2>
             <h2>Brief Description: <input type="string" name="briefDescription"
-                value=" <%= game.briefDescription %>" required></h2>
-            <br>
-            <input type="submit" value="Edit <%= game.name %>">
+                value=" <%= game.briefDescription %>" size="35" required></h2>
+            <input class="edit" type="submit" value="Edit <%= game.name %>">
         </form>
     </div>
     

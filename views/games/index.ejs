@@ -8,10 +8,10 @@
 </head>
 <body>
     <header class="index">
-        <h1>My Video Game List</h1>
-        <h1>User: <%= user %></h1>
-        <a href="/games/new"><h1>Add a New Game</h1></a>
-        <a href="/user/logout"><h1>Logout</h1></a>
+        <h1 class="index">My Video Game List</h1>
+        <h1 class="index">User: <%= user %></h1>
+        <a  href="/games/new"><h1 class='index'>Add a Game</h1></a>
+        <a  href="/user/logout"><h1 class="index">Sign Out</h1></a>
     </header>
     <div class="container">
         <% for (game of games) { %>
