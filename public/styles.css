@@ -145,10 +145,6 @@ button.show {
 
 /* New */
 
-body.new {
-    height: 100vh;
-    justify-content: center;
-}
 
 div.new {
     display: flex;
@@ -157,8 +153,25 @@ div.new {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    div.new {
+        text-align: center;
+    }
+
+    form.new>h2 {
+        font-size: 40px;
+    }
+}
+
 h1.new {
     font-size: 50px;
+    color: #d4dcff;
+}
+
+@media (max-width: 768px) {
+    h1.new {
+        font-size: 30px;
+    }
 }
 
 form.new {
@@ -167,10 +180,24 @@ form.new {
     justify-content: center;
     align-items: center;
     margin: 30px;
+    color: #d4dcff;
+}
+
+form.new>h2 {
+    font-size: 30px;
 }
 
 input {
     margin: 10px;
+    height: 30px;
+}
+
+input.new {
+    font-size: 20px;
+    color: black;
+    background-color: #007fff;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 /* Edit */
