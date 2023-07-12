@@ -59,7 +59,6 @@ router.get('/:id/edit', async (req, res) => {
 // Show
 router.get('/:id', async (req, res) => {
     const chosenGame = await Game.findById(req.params.id);
-    console.log(chosenGame)
 
     res.render('games/show.ejs', {game: chosenGame})
 });

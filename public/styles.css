@@ -105,10 +105,18 @@ h1.show {
     margin: 10px;
     font-size: 35px;
     text-decoration-line: underline;
+    color: #d4dcff;
 }
 
 h2.show {
     margin: 10px;
+    color: #d4dcff;
+}
+
+@media (min-width: 830px) {
+    h2#brief {
+        width: 30%;
+    }
 }
 
 input.show {
@@ -190,6 +198,12 @@ div.landing{
 h1.landing {
     font-family: 'Roboto', sans-serif;
     font-size: 50px;
+    color: #7d83ff
+}
+
+h2.landing {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
     color: #7d83ff
 }
 
