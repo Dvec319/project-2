@@ -19,7 +19,7 @@
         <h2 class="show">Year Released: <%= game.yearReleased %></h2>
         <h2 class="show">Brief Description: <%= game.briefDescription %></h2>
         <form method="POST" action="/games/<%=game.id%>?_method=DELETE">
-            <input type="submit" value="Delete Game">
+            <input class="show" type="submit" value="Delete Game">
         </form>
         <a href="/games/<%=game._id %>/edit">
             <button class="show">Edit <%= game.name %></button>
