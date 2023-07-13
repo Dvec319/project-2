@@ -134,13 +134,15 @@ h2.show {
 input.show {
     background-color: #007fff;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 30px;
+    height: 40px;
 }
 
 button.show {
     background-color: #007fff;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 30px;
+    height: 40px;
 }
 
 /* New */
@@ -193,11 +195,12 @@ input {
 }
 
 input.new {
-    font-size: 20px;
+    font-size: 30px;
     color: black;
     background-color: #007fff;
     border-radius: 10px;
     margin: 5px;
+    height: 40px;
 }
 
 /* Edit */
@@ -269,11 +272,12 @@ input {
 }
 
 input.edit {
-    font-size: 20px;
+    font-size: 30px;
     color: black;
     background-color: #007fff;
     border-radius: 10px;
     margin: 5px;
+    height: 40px;
 }
 
 /* Landing Page */
@@ -308,6 +312,7 @@ button.landing {
     background-color: #007fff;
     border-radius: 10px;
     margin: 5px;
+    height: 40px;
 }
 
 /* Signup */
@@ -340,6 +345,7 @@ input.signup {
     font-size: 30px;
     border-radius: 10px;
     margin: 5px;
+    height: 40px;
     background-color: #007fff;
 }
 
@@ -372,6 +378,7 @@ h2.login {
 input.login {
     font-size: 30px;
     border-radius: 10px;
+    height: 40px;
     margin: 5px;
     background-color: #007fff;
 }
