@@ -49,3 +49,4 @@ In this project I'm going to create an app that allows users to make a list of t
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 
 ![PICTURE OF ERD](https://i.imgur.com/97wh3h2.png)
+![Updated ERD](https://i.imgur.com/uQxDcCQ.png)
